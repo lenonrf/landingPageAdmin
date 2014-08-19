@@ -39,6 +39,13 @@ angular
             controller  : 'landingPage'
         })
       
+        .when('/landingpagenew', {
+            templateUrl : 'views/landingpagenew.html',
+            controller  : 'landingPage'
+        })
+      
+      
+      
       
         .otherwise({
             redirectTo: '/'

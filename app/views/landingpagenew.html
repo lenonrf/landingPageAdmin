@@ -1,0 +1,73 @@
+      <div id="header" >
+        <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
+          <div class="container">
+           
+              
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                    <li class="inactive"><a ng-href="#/home">Home</a></li> 
+                    <li class="active"><a ng-href="#/landingpage">Landing Page</a></li> 
+                  </ul>
+              </div>
+          </div>
+        </nav>
+        </div>
+
+<div class="container"><br><br><br>
+<form class="form-horizontal" ng-submit="inserirItem">
+
+    
+    <div class="form-group">
+    <div class="col-xs-10">
+        <ul class="nav nav-pills">
+            <li><a href="#/landingpage">Listar</a></li>
+            <li class="active"><a href="#/landingpagenew">Inserir</a></li>
+        </ul>
+    </div>
+    </div>
+    
+    
+    <div class="form-group">
+        <label for="descricao" class="control-label col-xs-2">Imagem</label>
+        <div class="col-xs-10">
+            <div class="fileinput fileinput-new input-group " data-provides="fileinput">
+                <div class="form-control" data-trigger="fileinput">
+                <i class="glyphicon glyphicon-file fileinput-exists"></i> <span class="fileinput-filename"></span></div>
+                <span class="input-group-addon btn btn-default btn-file"><span class="fileinput-new">Escolha a Imagem</span>
+                <span class="fileinput-exists">Mudar</span><input type="file" name="..."></span>
+                <a href="#" class="input-group-addon btn btn-default fileinput-exists" data-dismiss="fileinput">Excluir</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="form-group">
+        <label for="descricao" class="control-label col-xs-2">Descrição</label>
+        <div class="col-xs-10">
+            <input type="text" class="form-control" id="descricao" placeholder="">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="loja" class="control-label col-xs-2">Loja</label>
+        <div class="col-xs-10">
+            <input type="text" class="form-control" id="loja" placeholder="">
+        </div>
+    </div>
+    
+    <div class="form-group">
+        <label for="link" class="control-label col-xs-2">Link</label>
+        <div class="col-xs-10">
+            <input type="text" class="form-control" id="link" placeholder="">
+        </div>
+    </div>
+
+    <!-- Button (Double) -->
+    <div class="form-group">
+        <div class="col-xs-offset-2 col-xs-10">
+            <button type="button" class="btn btn-labeled btn-success"><span class="btn-label"><i class="glyphicon glyphicon-ok"></i></span>Success</button>
+            <button type="button" class="btn btn-labeled btn-danger"><span class="btn-label"><i class="glyphicon glyphicon-remove"></i></span>Danger</button>
+        </div>
+    </div>
+
+</form>
+</div>
