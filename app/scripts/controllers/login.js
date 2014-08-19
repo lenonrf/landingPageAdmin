@@ -8,14 +8,16 @@
  * Controller of the landingPageAdminApp
  */
 angular.module('landingPageAdminApp')
-  .controller('Login', function ($scope, $location) {
+.controller('login',[ '$scope', '$location',
+    function ($scope, $location) {
       
-      
-      $scope.login = function(){
-      
-          console.log('loga PESTE !!!')
-          $location.path('/landingpage');
-      }
-      
-      
-  });
+        console.log('login', $location);
+
+        $scope.login = function(){
+        
+            console.log('loga PESTE !!!');
+            $location.path('/landingpage');
+        
+        };
+
+}]);

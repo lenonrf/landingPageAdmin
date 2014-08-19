@@ -8,8 +8,10 @@
  * Controller of the landingPageAdminApp
  */
 angular.module('landingPageAdminApp')
-  .controller('landingPage', function () {
+  .controller('home', function ($scope, $location) {
       
-      console.log('landingPage');      
       
-  });
+      console.log('passei na home');
+      $location.path('/login');
+      
+});

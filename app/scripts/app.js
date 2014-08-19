@@ -18,27 +18,27 @@ angular
     'ngTouch'
   ])
   .config(function ($routeProvider) {
-    
+      
+          
       $routeProvider
+      
         .when('/', {
-            templateUrl: 'views/main.html',
-            controller: 'MainCtrl'
+            templateUrl : 'views/login.html',
+            controller  : 'login'
         })
       
-        .when('/about', {
-            templateUrl: 'views/about.html',
-            controller: 'AboutCtrl'
-        })
       
-        .when('/home', {
-            templateUrl : 'views/home.html',
-            controller  : 'Home'
+        .when('/login', {
+            templateUrl: 'views/login.html',
+            controller: 'login'
         })
 
+      
         .when('/landingpage', {
             templateUrl : 'views/landingpage.html',
-            controller  : 'LandingPage'
+            controller  : 'landingPage'
         })
+      
       
         .otherwise({
             redirectTo: '/'
