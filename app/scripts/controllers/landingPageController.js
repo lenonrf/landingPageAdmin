@@ -1,22 +1,9 @@
 'use strict';
 
-/**
- * @ngdoc function
- * @name landingPageAdminApp.controller:MainCtrl
- * @description
- * # MainCtrl
- * Controller of the landingPageAdminApp
- */
+
 angular.module('landingPageAdminApp')
-  .controller('landingPageController', function ($scope) {
+  .controller('landingPageController', function ($scope, LandingPageService) {    
       
-      console.log('landingPage');    
+      $scope.dataList = LandingPageService.getItems();      
       
-      $scope.data = {
-          nome : 'TESTE HI PHONE',
-          descricao : 'Internet WiFi, Tv, 2 chips, 2 Câmeras, Facebook, desbloqueado.',
-          precoDe : '100,00',
-          precoPara : '99,90'
-      };
-      
-  });
+});

@@ -96,17 +96,10 @@ img							{border:0px}
     </div>
     
     
-    <pc-landing-item data="data"></pc-landing-item>
-    <pc-landing-item data="data"></pc-landing-item>
-    <pc-landing-item data="data"></pc-landing-item>
-    <pc-landing-item data="data"></pc-landing-item>
-    <pc-landing-item data="data"></pc-landing-item>
-    <pc-landing-item data="data"></pc-landing-item>
-    <pc-landing-item data="data"></pc-landing-item>
-    <pc-landing-item data="data"></pc-landing-item>
-    <pc-landing-item data="data"></pc-landing-item>
-    <pc-landing-item data="data"></pc-landing-item>
-    <pc-landing-item data="data"></pc-landing-item>
+    <div ng-repeat="data in dataList">
+        <pc-landing-item data="data"></pc-landing-item>
+    </div>
+
     
 
 

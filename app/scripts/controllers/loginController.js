@@ -12,6 +12,9 @@ angular.module('landingPageAdminApp')
     function ($scope, $location) {
       
         console.log('login', $location);
+        
+        
+        
 
         $scope.login = function(){
         

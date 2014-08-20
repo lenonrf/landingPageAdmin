@@ -19,5 +19,4 @@ angular.module('landingPageAdminApp')
       
       return directiveDefinition;
       
-      
 });
