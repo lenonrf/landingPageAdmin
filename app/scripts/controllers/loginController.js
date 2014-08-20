@@ -10,17 +10,12 @@
 angular.module('landingPageAdminApp')
 .controller('loginController',[ '$scope', '$location',
     function ($scope, $location) {
-      
-        console.log('login', $location);
-        
-        
-        
 
-        $scope.login = function(){
         
-            console.log('loga PESTE !!!');
-            $location.path('/landingpage');
-        
+        angular.element('#header').hide();
+                
+
+        $scope.login = function(){    
+            $location.path('/landingpage');        
         };
-
 }]);

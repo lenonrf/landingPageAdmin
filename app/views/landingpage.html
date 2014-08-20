@@ -15,11 +15,13 @@ body 						{background-color:#fff; margin:0px; }
 a							{color:#000;}
 a:hover 					{color:#fff;}
 
-#segura						{width: 250px;
-													 margin-top:5px;
-							 height: 390px;
-							 float:left;
-							 padding-bottom:5px;}
+#segura	{
+    width: 250px;
+	margin-top:5px;
+	height: 390px;
+	float:left;
+	padding-bottom:5px;
+}
 
 .minhadiv   				{background-color:#ededed;
 							 width: 227px;
@@ -68,39 +70,23 @@ img							{border:0px}
 
 
 
-<div id="header" >
-        <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
-          <div class="container">
-           
-              
-              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                  <ul class="nav navbar-nav">
-                    <li class="inactive"><a ng-href="#/home">Home</a></li> 
-                    <li class="active"><a ng-href="#/landingpage">Landing Page</a></li> 
-                  </ul>
-              </div>
-          </div>
-        </nav>
+<div class="container">
+
+    <div class="row">
+        <button type="button" class="btn btn-primary btn-lg" >
+            <span class="glyphicon glyphicon-ok"></span> Novo Item
+        </button>
+    </div>
+    
+    
+    
+    
+    <div class="row col-xs-12">
+
+        <div ng-repeat="data in dataList">
+            <pc-landing-item data="data"></pc-landing-item>
         </div>
-
-<div class="container"><br><br><br>
-
-    
-    <div class="form-group">
-    <div class="col-xs-10">
-        <ul class="nav nav-pills">
-            <li class="active"><a href="#/landingpage">Listar</a></li>
-            <li><a href="#/landingpagenew">Inserir</a></li>
-        </ul>
     </div>
-    </div>
-    
-    
-    <div ng-repeat="data in dataList">
-        <pc-landing-item data="data"></pc-landing-item>
-    </div>
-
-    
 
 
 </div>

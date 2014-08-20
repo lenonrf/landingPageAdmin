@@ -13,7 +13,7 @@ angular.module('landingPageAdminApp')
           
           },
         
-          templateUrl: '../../views/templates/landingItem.html'
+          templateUrl: '../../views/templates/landingitem.html'
       };
       
       

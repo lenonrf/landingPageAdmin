@@ -32,7 +32,6 @@ angular
             templateUrl: 'views/login.html',
             controller: 'loginController'
         })
-
       
         .when('/landingpage', {
             templateUrl : 'views/landingpage.html',

@@ -17,6 +17,7 @@
       <!-- Custom styles for this template -->
     
       <link href="styles/signin.css" rel="stylesheet">
+      <link href="styles/util.css" rel="stylesheet">
     
       <!-- endbuild -->
   
@@ -27,7 +28,30 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         
-  
+        <br><br>
+
+        
+      <div id="header" ng-hide="">
+        <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
+          <div class="container">   
+              
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                                      
+                      <li class="dropdown">
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown">Landing Page  <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                          <li><a href="#/landingpage">Items</a></li>
+                          <li><a href="#">Categorias</a></li>                          
+                        </ul>
+                      </li>
+                      
+                      
+                  </ul>
+              </div>
+          </div>
+        </nav>
+    </div>
         
         <div id="wrapper" class="container">
             <div id="containerView" ng-view ></div>
@@ -76,20 +100,17 @@
         
         
         
-        <!-- CONTROLLERS -->
-        
+        <!-- CONTROLLERS -->        
         <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/homeController.js"></script>
         <script src="scripts/controllers/loginController.js"></script>
         <script src="scripts/controllers/landingPageController.js"></script>
         
         
-        <!-- DIRECTIVES -->
-        
+        <!-- DIRECTIVES -->        
         <script src="scripts/directives/landingItemDirective.js"></script>
         
-        <!-- SERVICES -->
         
+        <!-- SERVICES -->        
         <script src="scripts/services/landingPageService.js"></script>
         
         
