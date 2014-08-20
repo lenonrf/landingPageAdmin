@@ -8,7 +8,7 @@
  * Controller of the landingPageAdminApp
  */
 angular.module('landingPageAdminApp')
-.controller('login',[ '$scope', '$location',
+.controller('loginController',[ '$scope', '$location',
     function ($scope, $location) {
       
         console.log('login', $location);

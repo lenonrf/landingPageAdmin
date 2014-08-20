@@ -24,24 +24,24 @@ angular
       
         .when('/', {
             templateUrl : 'views/login.html',
-            controller  : 'login'
+            controller  : 'loginController'
         })
       
       
         .when('/login', {
             templateUrl: 'views/login.html',
-            controller: 'login'
+            controller: 'loginController'
         })
 
       
         .when('/landingpage', {
             templateUrl : 'views/landingpage.html',
-            controller  : 'landingPage'
+            controller  : 'landingPageController'
         })
       
         .when('/landingpagenew', {
             templateUrl : 'views/landingpagenew.html',
-            controller  : 'landingPage'
+            controller  : 'landingPageController'
         })
       
       
